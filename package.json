@@ -11,7 +11,8 @@
   },
   "scripts": {
     "start": "webpack-dev-server --open",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sync": "aws s3 sync s3 s3://www.atombrenner.de/ --profile atombrenner"
   },
   "author": "",
   "license": "ISC"
