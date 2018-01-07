@@ -1,83 +1,79 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html lang="">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Atombrenner</title>
-  <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+  <meta name="description" content="Homepage Atombrenner">
+  <meta name="author" content="Christian Rodemeyer">
+  <title>Atombrenner</title>
   <link rel="apple-touch-icon" href="icon-152.png" sizes="152x152">
-  <link rel="icon" type="image/png" href="icon-16.png" sizes="16x16">
-  <link rel="icon" type="image/png" href="icon-32.png" sizes="32x32">
-  <link rel="icon" type="image/png" href="icon-96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/icon/icon-16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="/icon/icon-32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/icon/icon-96.png" sizes="96x96">
   <style>
     @import url('https://fonts.googleapis.com/css?family=Ubuntu:400,500,700');
     html {
-      /*background: linear-gradient(to top left, lightblue, rgb(0, 0, 0, 128));*/
-      /*background: radial-gradient(ellipse at center, #ffa84c 0%,#ff7b0d 100%);*/
-      /*background: linear-gradient(to bottom, #b7deed 0%,#71ceef 50%,#21b4e2 51%,#b7deed 100%);*/
-      /*background: linear-gradient(to right, #ffb75e, #ed8f03);*/
-      background: radial-gradient( ellipse farthest-side at center top 30%, #ffe151, #f59200);
-
-      height: 100%;
       font-family: 'Ubuntu', sans-serif;
       font-weight: 400;
       font-size: 16px;
       font-size: 1.6vw;
       color: #201000;
+      background: radial-gradient( ellipse farthest-side at center top 30%, #ffe151, #f59200);
+      height: 100%;
     }
     body {
       margin:0;
       padding:0;
     }
-    a {
-      color:inherit;
-      text-decoration: inherit;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    h1 {
-      font-size: 5rem;
-      font-weight: 700;
-      letter-spacing: 0.2rem;
-      margin: 0;
-    }
-    h2 {
-      font-weight: 500;
-      font-size: 2rem;
-    }
-    .center {
+    .content {
       position: absolute;
       top:30%;
       left: 50%;
       margin-right: -50%;
       transform: translate(-50%, -30%);
     }
-    .subheading {
+    h1 {
+      font-size: 5rem;
+      font-weight: 700;
+      letter-spacing: 0.2rem;
+      margin: 0;
+      /*text-shadow: 1rem 1rem 0.3rem #0000ff;*/
+    }
+    .subtitle {
+      text-align: center;
+      letter-spacing: 0.4rem;
+    }
+    h2 {
+      font-weight: 500;
+      font-size: 2rem;
+      margin: 0;
+    }
+    nav {
       margin-left:auto;
       margin-right: auto;
       display: flex;
       justify-content: space-around;
     }
-    .year {
-      text-align: center;
-      letter-spacing: 0.4rem;
+    a {
+      color: inherit;
+      text-decoration: inherit;
+    }
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-<div class="center">
+<div class="content">
   <h1>ATOMBRENNER</h1>
-  <p class="year">1970</p>
-  <div class="subheading">
+  <p class="subtitle">1970</p>
+  <nav class="navigation">
     <h2><a href="https://atombrenner.blogspot.de/">Blog</a></h2>
     <h2>Projects</h2>
     <h2>About</h2>
-  </div>
+  </nav>
 </div>
-
 <script src="bundle.js"></script>
 </body>
 </html>

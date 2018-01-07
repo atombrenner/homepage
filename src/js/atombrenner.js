@@ -1,3 +1,3 @@
 'use strict'
 
-console.log("I'm here ...")
+// just for reloading via webpack-devserver

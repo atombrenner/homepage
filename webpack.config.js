@@ -4,7 +4,7 @@ module.exports = {
         filename: './bundle.js'
     },
     devServer: {
-     contentBase: './s3',
+     contentBase: './src',
      watchContentBase: true
     }
 };
