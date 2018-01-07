@@ -1,0 +1,245 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Pathfinder</title>
+  <meta name="description" content="Pathfinder, a game server browser tool">
+  <meta name="keywords" content="RTCW, Return to Castle Wolfenstein, Jedi Knight, Star Trek Voyager, Elite Force, Game Server Browser, Gamespy, GSA">
+</head>
+
+<body bgcolor="#000000" text="#ffffff" link="#00ccff" vlink="#ff00ff" background="pathfinder/pathfinder_back.jpg">
+  <table border=0 width=100%>
+    <tr>
+      <td align=left valign=top>&nbsp;</td>
+      <td>
+        <H2 align="center"><font color="#FFFF00">Pathfinder Enemy Territory&nbsp;1.02a*New*</font></H2>
+        <H2 align="center">Pathfinder =Wolfenstein= 1.4.1</H2>
+        <H2 align="center">Pathfinder Jedi Knight&nbsp;2 (New Master Server)</H2>
+        <H2 align="center">Pathfinder 1.8.5 (New Master Server)</H2>
+        <P align="center"><a href="#History">History</a></P>
+      </td>
+      <td align=right valign=top>&nbsp;</td>
+    </tr>
+  </table>
+  <p>Pathfinder is a little utility for multiplayer games based on the Q3 engine, that queries all internet game servers for game status such as connected players, current map and so on. You can simply search for friends, which are currently connected to
+    any holomatch server. My intention was to write a very simple and intuitive tool without the extreme overhead of gamespy or similar progs. Compared with Gamespy there are some other advantages:</p>
+  <ul>
+    <li>uses much less memory, if you join a game, it will close itself and therefore use no memory at all while gaming</li>
+    <li>the server ping is the time from your computer to the selected game server, not the time from the gamespy master to the game server</li>
+    <li>colored names are displayed correctly (control keys will be stripped)</li>
+  </ul>
+  <p>&nbsp;Pathfinder is free software, so you can use and distribute it without any fee :-).</p>
+  <ul>
+    <li><a href="pathfinder/pathfinder_screenshots.htm">Screenshots</a></li>
+    <li><a href="pathfinder/pathfinder_et.zip">Download Pathfinder Enemy Territory 1.02a (113KB)</a>
+      <font color="#FFFF00">*New*</font>
+    </li>
+    <li><a href="pathfinder/pathfinder_rtcw.zip">Download Pathfinder <STRONG>=Wolfenstein=</STRONG> (113KB)</a>
+      <font color="#808080">(with mod support)</font>
+    </li>
+    <li><a href="pathfinder/pathfinder_rtcw_french.zip">Download Pathfinder <strong>=Wolfenstein=</strong> French (113KB)</a></li>
+    <li><a href="pathfinder/pathfinder_jk2.zip">Download Pathfinder <STRONG>Jedi Knight</STRONG><b> 2</b> (111KB)</a>
+      <li><a href="pathfinder/pathfinder.zip">Download Pathfinder (<STRONG>EF 1.8.5</STRONG>) (120KB)</a></li>
+      <li>
+        <A href="pathfinder/pathfinder_source.zip">Pathfinder 1.8.4 source (38KB)</A>
+      </li>
+      <li>
+        <A href="pathfinder/pathfinder_rtcw_source.zip">Pathfinder =Wolfenstein= 1.3 source (38KB)</A>
+      </li>
+  </ul>
+  <h2>Installation</h2>
+  <p>Extract pathfinder.exe from pathfinder.zip to wherever you want and place a link on your desktop (right drag&amp;drop). Pathfinder needs the MFC runtime&nbsp; which must be installed on your system. Most probably some other application has already installed
+    these dlls (mfc42.dll, msvcrt.dll, msvcp60.dll). If not, you will get some error messages complaining that some functions or dlls are missing. You can get the newest MFC dlls from <a href="http://windowsupdate.microsoft.com">windowsupdate.microsoft.com</a>.(vcredist.exe)
+    or many other places on the web.</p>
+  <h2>Using Pathfinder</h2>
+  <p>Connect to the internet and start Pathfinder. Using Pathfinder is simple: Click the '<b><font color="#ffffcc">Query Servers</font></b>' button to query all running holomatch servers. The tables are now filled with the gathered information. The tabs
+    '
+    <b><font color="#ffffcc">Player</font> <font color="#ffffcc">list</font></b>' and '<b><font color="#ffffcc">Server list</font></b>' are switching between two different views. The first shows a flat list of all players currently logged in. The second
+    shows a list of all running servers. If you select one of the server entries, the dependent table to the right shows all players logged on to the selected server.&nbsp; In the '<b><font color="#ffffcc">Speed</font></b>' box you can select your internet
+    connection speed. It determines the maximum number of parallel queries. The '<b><font color="#ffffcc">Include empty servers</font></b>' checkbox does exactly what it says: it queries every server even if the master server says that there are no connected
+    players.&nbsp;Check '<b><font color="#ffffcc">Exclude bots</font></b>' to filter all players with zero ping (most probably bots).&nbsp;</p>
+  <p>Beginning with version 1.8 there is a new button '<b><font color="#ffffcc">Query Favorites</font></b>', which will query only your favorite servers, circumventing the master server. To add a server to your favorites list, simply right click on a server
+    in the server view and select 'Add to favorites'. You can view and edit your favorites by clicking the '...' button right to the 'Query Favorites' button. By clicking into the cells of the table, you can edit the server name, ip and password.</p>
+  <p>No matter which view is active, you can search for a friend by entering his name in the field above the '<b><font color="#ffffcc">Search</font></b>' button. If the player is found,&nbsp; the corresponding table entries will be marked. The search is
+    case insensitive. Every entered name will be stored to the registry, so the next time you can select it by entering the first few chars or opening the list. You can delete a name from the list by selecting it and pressing the '
+    <font color="#ffffcc"><b>Del</b></font>' button. If the first char is a '*', every player whose name contains the search string is found. So if you search for *xyz, the following players would be found: [<b><font color="#008000">XYZ</font></b>] Bugatto, <b><font color="#008000">xyz</font></b>_mistyred
+    or Borg<b><font color="#008000">xyz</font></b>ar. Typing xyz would only find <b><font color="#008000">xyz</font></b>_mistyred</p>
+  <p>If you have found a friend or server, simply click the '<b><font color="#ffffcc">Join</font></b>' button. The game will start and directly connect to the selected server. The first time you will be asked for the location of the Start Trek Voyager Elite
+    Force Holomatch Executable (stvoyHM.exe).&nbsp;If the server needs a password, you can enter one in the pwd edit box.&nbsp;</p>
+  <p>You can customize the tables (sorting, width, column order) by clicking in the header section, drag&amp;drop headers, or using the right mouse button. All changes are saved in the registry (HKEY_CURRENT_USER/Software/Pathfinder), so the next time you
+    start Pathfinder it will look like the time you last closed it. When a table is sorted by one single column, you can search this column by simply typing the search string.</p>
+  <p>Because Elite Force clients and servers have to be the same version, you can select the version of your installation. Currently 1.0, 1.1 and 1.2 are supported. 1.0 is the original game and 1.1 is the first patch released.&nbsp;The Expansion Pack works
+    with 1.2. Sometimes the master server (master.stef1.ravensoft.com) does not respond. Don't worry, wait a few seconds and try again. If you still get an error, you will be probably behind a firewall, which blocks the chosen UDP port. If not, Pathfinder
+    will query the last known servers. (The last known servers are saved to vxx.dat every time the master responds. You can edit the file manually, if you like.)</p>
+  <h2>Copyright</h2>
+  <p>Pathfinder is © 2000 by Christian Rodemeyer</A>. Pathfinder is freeware, which means, that you can use and distribute it without any charges. If you like it, praise my name and send me an e-mail ;-). Want to know how Pathfinder works? The <a href="http://www.atombrenner.de/pathfinder/pathfinder_source.zip">source</a>    is available too. Because it uses some non free libraries, you will probably not be able to compile it, though. But it is sufficient to understand the essential parts.</p>
+  <p>The latest version of pathfinder will always be available on its <a href="http://www.atombrenner.de/pathfinder.htm">homepage</a>.&nbsp;&nbsp;</p>
+  <h2>Expression of thanks</h2>
+  <p>Many thanks to Steve Jankowski (author of <a href="http://www.activesw.com/people/steve/qstat.html">qstat</a>) and Kris Sum (<a href="http://coldstorage.gamecop.com/frames.htm">kquery</a>). Although I couldn't figure out how to use their programs for
+    STVOYHM ;-) their source and documentation helped me very much. Especially useful was the list of <a href="http://0x00.org/random/Halflife/QueryingGameServers.txt">game query codes</a> from Kris Sum. I wish to thank all EF players who supplied me
+    with feedback and good ideas.&nbsp; </p>
+  <p>Thank you very much! </p>
+  <h2><a name="History">History</a></h2>
+  <table border="1" cellspacing="0" bordercolor="#000080">
+    <tr>
+      <th>Version</th>
+      <th>Date</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td nowrap>1.8.4</td>
+      <td nowrap>2001-12-09</td>
+      <td>
+        <ul>
+          <li>faster querying for faster connections :-)</li>
+          <li>malformed udp packets could 'hang' pathfinder (strangely those wrong packets only appear under WinXP ...), fixed</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td nowrap>1.8.3</td>
+      <td nowrap>2001-09-05</td>
+      <td>
+        <ul>
+          <li>searching for a player who is not found will now unselect any previous selected players (some cosmetic)</li>
+          <li>all server variables are visible in an extra window (right click server -&gt; choose 'Show server info' from context menu)</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td nowrap>1.8.2</td>
+      <td nowrap>2001-07-19</td>
+      <td>
+        <ul>
+          <li>sorry, but favorites and favorites pwd worked only by chance, corrected that one</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td nowrap>1.8.1</td>
+      <td nowrap>2001-07-18</td>
+      <td>
+        <ul>
+          <li>closing Pathfinder in minimized mode from the taskbar does no longer crash it ;-)</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td nowrap>1.8</td>
+      <td nowrap>2001-07-17</td>
+      <td>
+        <ul>
+          <li>new option 'Exclude bots', which excludes players with zero ping (bots)</li>
+          <li>removed the 'Update' button to get some space for the 'Favorites' button ;-)</li>
+          <li>using a high resolution timer for better ping calculation</li>
+          <li>maintaining a list of favorite servers: 'Query Favorites', '...', context menu</li>
+          <li>found and corrected the ridiculous bug, that sometimes sets the window size to (0|0) or (-1|-1)</li>
+          <li>you can now join a server by double clicking on a server or player</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td nowrap>1.7.1</td>
+      <td nowrap>2001-05-31</td>
+      <td>
+        <ul>
+          <li>fixed the sometimes occurring duplication of servers and players (still the master server protocol problem)</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td nowrap>1.7</td>
+      <td nowrap>2001-05-26</td>
+      <td>
+        <ul>
+          <li>All previous versions queried max 97 Gameservers due to incorrect assumptions about the master server protocol. This is fixed by using a different query heuristic. If anyone knows where to find the official master server protocol documentation,
+            please let me know!&nbsp;</li>
+          <li>the new Expansion Pack modifications are displayed (Elimination, ActionHero, Disintegration, Assimilation, Specialties)</li>
+          <li>entering a password for protected servers is possible</li>
+          <li>you can disable the autoclose feature (for those crazy people ... lol)</li>
+          <li>you can search for player names containing a string by prefixing it with a '*'. Practical for clan searching ;-)</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td nowrap>1.6.1</td>
+      <td nowrap>2001-05-07</td>
+      <td>
+        <ul>
+          <li>vxx.dat files are now written after the query process finished thus speeding up the query</li>
+          <li>preparations for the new Expansion Pack game types&nbsp;</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td nowrap>1.6</td>
+      <td nowrap>2001-05-06</td>
+      <td>
+        <ul>
+          <li>added support for the 1.2 patch (Expansion Pack)</li>
+          <li>fixed the bug, that directly after version switching server ip's were written to the wrong vxx.dat file.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td nowrap>1.5</td>
+      <td nowrap>2001-03-25</td>
+      <td>
+        <ul>
+          <li>changed combo box to list box&nbsp;</li>
+          <li>added a 'Del' button to delete entries from the favorite players list</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td nowrap>1.4</td>
+      <td nowrap>2001-01-28</td>
+      <td>
+        <ul>
+          <li>CComboBox seems to ignore '[' at first position. So when you enter 'c' it will find '[c' as a matching string. Now I do the comparison by myself.</li>
+          <li>Searched Players are now also selected in the player on server table</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td nowrap>1.3</td>
+      <td nowrap>2001-01-14</td>
+      <td>
+        <ul>
+          <li>The 'Search for player' box accepts now correctly keys which are generated by key combinations (ctrl or alt plus another key). Vv11.dat updated.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td nowrap>1.2</td>
+      <td nowrap>2000-12-30</td>
+      <td>
+        <ul>
+          <li>If the master server (master.stef1.ravensoft.com:27953) does not respond, the last known servers will be queried. Every time the master responds, the server addresses are saved to a file (v10.dat or v11.dat) for later use. The distribution includes
+            a sample file with some servers addresses.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td nowrap>1.1</td>
+      <td nowrap>2000-12-24</td>
+      <td>
+        <ul>
+          <li>Last View (Server or Player) remembered via registry</li>
+          <li>If Search does not find an exact match, it displays the most similar</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td nowrap>1.0</td>
+      <td nowrap>2000-12-21</td>
+      <td>
+        <ul>
+          <li>Version 1.0 released</li>
+        </ul>
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>
