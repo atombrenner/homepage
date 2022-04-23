@@ -19,7 +19,8 @@
       html {
         font-family: "Ubuntu", sans-serif;
         font-weight: 400;
-        font-size: 1.6vw;
+        font-size: min(2vw, 20px); /*clamp(10px, 2vw, 22px);*/
+        line-height: 1;
         color: #201000;
         background: radial-gradient(
           ellipse closest-corner at center 30%,
@@ -28,47 +29,59 @@
         );
         height: 100%;
       }
-      body {
+      * {
         margin: 0;
         padding: 0;
+        box-sizing: border-box;
       }
       .content {
-        position: absolute;
-        top: 30%;
-        left: 50%;
-        margin-right: -50%;
-        transform: translate(-50%, -30%);
+        margin: 25vh auto auto auto; 
       }
       h1 {
-        font-size: 5rem;
+        font-size: 5rem; 
         font-weight: 700;
         letter-spacing: 0.25rem;
         margin: 0;
         text-shadow: 0 0 2.3rem #ffffff;
+        text-align: center;
       }
       .subtitle {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
         text-align: center;
-        letter-spacing: 0.4rem;
+        letter-spacing: 0.4ex;
       }
       h2 {
+        margin-bottom: 1.5rem;
         font-weight: 500;
-        font-size: 2rem;
+        font-size: 2rem; 
         text-align: center;
-        width: 10rem;
+      }
+      h3 {
+        margin-top: 1rem;
+        font-weight: 500;
+        font-size: max(1rem, 10px);
+        text-align: center;
       }
       nav {
+        width: 80ex;
         margin-left: auto;
         margin-right: auto;
         display: flex;
-        justify-content: space-between;
+      }
+      nav > * {
+        width: 33.3%;               
       }
       a {
-        color: inherit;
+        color: rgb(0, 40, 210);
         text-decoration: inherit;
+      }
+      a:visited {
+        color:  rgb(100, 40, 130);
       }
       a:hover {
         text-decoration: underline;
-      }
+      } 
     </style>
   </head>
   <body>
@@ -76,9 +89,23 @@
       <h1>ATOMBRENNER</h1>
       <p class="subtitle">1970</p>
       <nav>
-        <h2><a href="https://atombrenner.blogspot.de/">Blog</a></h2>
-        <h2><a href="/pathfinder.htm">Projects</a></h2>        
-        <h2>About</h2>
+        <div><h2>Blog</h2>
+          <h3><a href="https://atombrenner.blogspot.com/search/label/Feature%20Toggles">Feature Toggles</a></h3>
+          <h3><a href="https://atombrenner.blogspot.com/search/label/AWS">AWS</a></h3>
+          <h3><a href="https://atombrenner.blogspot.com/search/label/Thoughts">Thoughts</a></h3>
+        </div>
+        <div>
+          <h2>Projects</h2>
+          <h3><a href="https://github.com/atombrenner"/>Github</a></h3>
+          <h3><a href="/focus-crop-react/index.html">Focus Crop React</a></h3>
+          <h3><a href="/pathfinder.htm">Pathfinder</a></h3>
+        </div>        
+        <div>
+          <h2>About</h2>
+          <h3>A Software</h3>
+          <h3>Engineer &amp; Architect</h3>
+          <h3><a href="mailto:atombrenner@gmail.com">Contact</a></h3>
+        </div>
       </nav>
     </div>
   </body>
