@@ -6,7 +6,7 @@
   "dependencies": {},
   "devDependencies": {},
   "scripts": {
-    "deploy": "aws s3 sync ./s3 s3://www.atombrenner.de/ --profile atombrenner"
+    "deploy": "aws s3 sync ./s3 s3://www.atombrenner.de/ --cache-control 'public,max-age=86400' --profile atombrenner"
   },
   "author": "Christian Rodemeyer",
   "license": "none"
